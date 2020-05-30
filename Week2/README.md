@@ -4,9 +4,11 @@
 - similar to algebra where a variable represents a number
 - except that unlike algebra in most cases the value of our variable the value is known... i.e. we are not solving for the value but 
 instead holding the value so that we can use it
-- variables are the how programs store data in a computer program
+- variables are how programs store data in a computer program.. i.e. the memory of the program
 - variables can hold very little data in size or very large
 - in a program a variable can store different data types in memory
+- JavaScript has 5 variable types - number, string, boolean,null, undefined - will talk more about this
+- you don't tell JS the type to store it knows based on the data (e.g. x = 10 and x = "10" and x = false)
 - valid variable names
    - case sensitive
    - must start with letter or underscore
@@ -150,6 +152,24 @@ let x = sum(3,4)
 let a = 10
 let b = 20
 let c = sum(a,b)
+```
+
+```
+**********************************************************
+
+In class assignment - 10 minutes
+declare two variables firstName and lastName
+assign the values to a new variable called fullName
+write the result to the console
+
+also do this assignment
+declare two variables val1 and val2 
+declare another variable called sum
+assign a numeric value to val1 and a different value to val2
+place the sum of the two numbers in the sum variable
+write the result to the console
+
+**********************************************************
 ```
 
 - Functions are a way to produce reusable code.... for example 

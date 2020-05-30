@@ -1,4 +1,16 @@
-//Assignment
+//complete the work below labeled assignemtn and commit it to your repository
+function test(actual, expected, testName){
+    if(expected === actual){
+        console.log(`TEST ${testName} PASSED`)
+    }
+    else{
+        console.log(`TEST ${testName} Failed`)
+        console.log(`   expected '${expected}' but was '${actual}' `)
+    }
+}
+
+
+//exercise 1
 function isUpper(myChar){
     let result = false;
     //your code here
@@ -9,6 +21,16 @@ function isUpper(myChar){
     return result;
 }
 
+test(isUpper('A'), true, "IsUpper 1")
+test(isUpper('M'), true, "IsUpper 2")
+test(isUpper('Z'), true, "IsUpper 3")
+test(isUpper('1'), false, "IsUpper 4")
+test(isUpper('a'), false, "IsUpper 5")
+test(isUpper('m'), false, "IsUpper 6")
+test(isUpper('m'), false, "IsUpper 7")
+
+
+//exercise 2
 function isLower(myChar){
     let result = false;
     //your code here
@@ -19,22 +41,38 @@ function isLower(myChar){
     return result;
 }
 
+test(isLower('A'), false, "IsLower 1")
+test(isLower('M'), false, "IsLower 2")
+test(isLower('Z'), false, "IsLower 3")
+test(isLower('1'), false, "IsLower 4")
+test(isLower('a'), true, "IsLower 5")
+test(isLower('m'), true, "IsLower 6")
+test(isLower('z'), true, "IsLower 7")
+
+
+//exercise 3
+//convert the character to lower case
+//
 function toLowerCase(myChar){
     let newChar = myChar;
-
-    if(isUpper(myChar)){
-        //set new chare to its upper case equirvalent
-        //use the ascii table
-        //subtract the offset from 'a' - 'A'
-    }
 
     return newChar;
 }
 
-function printArray(myArray)}{
+test(toLowerCase('A'), 'a', "toLower 1")
+test(toLowerCase('Z'), 'z', "toLower 2")
+test(toLowerCase('1'), '1', "toLower 3")
+test(toLowerCase('a'), 'a', "toLower 4")
+test(toLowerCase('m'), 'm', "toLower 5")
+test(toLowerCase('z'), 'z', "toLower 6")
+
+//exercise 4
+//print the array using a for loop
+function printArray(myArray){
     //use a for loop to print the array
 }
 
+//exercise 5
 //Print the array as a string
 //do not change the array but print it as a string
 //do not use any array methods
@@ -42,6 +80,8 @@ function printArrayAsString(myArray){
     
 }
 
+
+//exercise 6
 //assume you have a non-empty array
 //of number values
 //return but do not print the array
@@ -52,12 +92,19 @@ function convertArrayToString(myArray){
 
 }
 
+test(convertArrayToString([1,2,3,4,5]), '1,2,3,4,5', "convertArrayToString 1")
+test(convertArrayToString([1]), '1', "convertArrayToString 2")
+
+
+//exercise 7
 //return the lastElement in the array
-//do not use any array methods
 function getLastElement(myArray){
 
 }
+test(getLastElement([1]), 1, "getLastElement 1")
+test(getLastElement([1,2,,3]), 3, "getLastElement 2")
 
+//exercise 8
 //check if an array contains a value
 //return true if found
 //return false otherwise
@@ -67,7 +114,15 @@ function getLastElement(myArray){
 function containsValue(myArray, value){
 
 }
+test(containsValue([1,2,3], 1), true, "containsValue 1")
+test(containsValue([1,2,,3], 2), true, "containsValue 2")
+test(containsValue([1,2,,3], 3), true, "containsValue 3")
+test(containsValue([1,2,,3], 4), false, "containsValue 4")
+test(containsValue([1,2,,3], '2'), false, "containsValue 5")
 
+
+
+//exercise 9
 //copy the values from myArray 
 //into the target array
 //assume the target array has a legnth of
@@ -75,6 +130,13 @@ function containsValue(myArray, value){
 function copyArray(myArray, targetArray){
 
 }
+
+let a1 = [1,3,5,8]
+let a2 = []
+copyArray(a1, a2)
+test(a2[0], 1, "copyArray 1")
+test(a2[3], 8, "copyArray 2")
+
 
 //write a loops that prints all
 //the numbers from 0 to 1000
@@ -93,15 +155,28 @@ function copyArray(myArray, targetArray){
 //      *****
 //     *******
 
+//exercise 10
 //BONUS points
-//write a function name fuzzBizz
-//for integers divisible by 3 print "fizz"
-//for integers divisble by 5 print "buzz"
-//for integers divisilbe by 3 and 5 and print "buzz fizz"
+//write a function name fizzBuzz
+//for integers divisible by 3 return "fizz"
+//for integers divisible by 5 return "buzz"
+//for integers divisible by 3 and 5 and return "fizz buzz"
 //only print one of the values based on the conditions
-function fuzzBizz(val){
+//hint use the mod operator %
+//for integers not divisible by either 3 or 5 return empty string
+function fizzBuzz(val){
 
 }
 
-//complete the work above and commit it to your repository
+test(fizzBuzz(3), "fizz", "fizzBuzz 1")
+test(fizzBuzz(5), "buzz", "fizzBuzz 2")
+test(fizzBuzz(15), "fizz buzz", "fizzBuzz 3")
+test(fizzBuzz(2), "", "fizzBuzz 4")
+
+
+
+
+
+
+
 
