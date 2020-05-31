@@ -86,7 +86,7 @@ console.log(`4. ${a} equals ${b} is: `, a.localeCompare(b))
 - string.indexOf('apple', 5)
 - idxOfApple = string.indexOf('apple')
 - idxOfSpace = string.indexOf(' ', idxOfApple)
-- let word = string.substring(idxOfApple, idxOfSpace-idxOfApple)
+- let word = string.substring(idxOfApple, idxOfSpace)
 
 ### Comparing Strings for equality 
 if(string1.localeCompare(string2) == 0)
@@ -287,9 +287,9 @@ console.log("mySoup[4] " + mySoup[4])
 
   //example of a loop that prints each number in array
   let nameArray = ['b', 'a', 'r', 't'];
-  for(let i=0; i < name.length; i++)
+  for(let i=0; i < nameArray.length; i++)
   {
-      console.log(name[i])
+      console.log(nameArray[i])
   }
 
   //example of loop that doubles each item in array
