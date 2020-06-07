@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /*
     Complete the assignments below.
@@ -191,7 +190,6 @@ print(vehicle)
     Easy assignment to do excercise a little creativity
     
 */
-=======
 
 /*
     Complete the assignments below.
@@ -286,9 +284,9 @@ function formatName(firstName, lastName){
     
 }
 
-let firstName = "John"
-let lastName = "Smith"
-let formattedName = formatName(firstName, lastName)
+firstName = "John"
+lastName = "Smith"
+formattedName = formatName(firstName, lastName)
 
 if("Smith, John".localeCompare(formattedName) == 0){
     console.log("Test 2.1 PASSED!")
@@ -318,7 +316,7 @@ else{
 
 //Add your code here to create the object
 
-let vehicle = {
+vehicle = {
     color: "Red",
     height: 1,
     weight: 1,
@@ -437,4 +435,3 @@ function homeState(){
 }
 
 creativity()
->>>>>>> 55f07815d571c869c4fec497e49463770932c997
