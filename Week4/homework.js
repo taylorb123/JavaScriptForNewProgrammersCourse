@@ -1,8 +1,17 @@
 //create a function name myFilter
 //that takes an array and filters by conditon
-// funcion myFilter(myArray, callBack){
-    
-// }
+
+function myFilter(myArray, callBack){
+    let filter = []
+    for(let i = 0; i < myArray.length; i++)
+    {
+        if(callBack(myArray[i])){
+            filter.push(myArray[i])
+        }
+        
+    }
+    return filter
+}
 let names = ["homer", "bart", "marge", "list"]
 console.log(names.sort(function(a,b){
     let x = a.toLocaleLowerCase()
