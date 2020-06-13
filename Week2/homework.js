@@ -35,6 +35,12 @@
 function findSmallestOfThreeNumbers(a, b, c){
     
     //Add your code here
+    if(a < b && a < c)
+        return a
+    else if(b < a && b < c)
+        return b
+    else
+        return c
 }
 
 if( 1 == findSmallestOfThreeNumbers(1,2,3)){
@@ -82,6 +88,7 @@ else{
 function formatName(firstName, lastName){
     //Assignment 1
     //add your code here
+    return lastName + ", " + firstName
     
 }
 
@@ -117,7 +124,19 @@ else{
 
 //Add your code here to create the object
 
-let vehicle = {}; //change {} to your object
+let vehicle = {
+    color: "Red",
+    height: 1,
+    weight: 1,
+    category(){
+        if(vehicle.weight < 2)
+            return "light"
+        else if(vehicle.weight >=2 && vehicle.weight <4)
+            return "medium"
+        else
+            return "Heavy Duty"
+    }
+}; //change {} to your object
 
 function print(vehicle){
 
@@ -155,7 +174,18 @@ print(vehicle)
  * 
  * Objective: use of boolean conditions
  */
-
+function IsAWin (cell1, cell2, cell3){
+    if(cell1 == 'o' && cell2 == 'o' && cell3 == 'o'){
+        console.log("O's win!")
+        return true
+    }
+    else if(cell1 == 'x' && cell2 == 'x' && cell3 == 'x'){
+        console.log("X's win!")
+    }
+    else
+        console.log('Not a win!')
+}
+//IsAWin('o','x','o')
  /**
   * Assignment 5
   * 
@@ -171,7 +201,13 @@ print(vehicle)
   * 
   * Objective: Think like a programmer and use of math operators
   */
+function calculateYearOfBirth(ageInMonths){
+    now = 2020
+    age = ageInMonths / 12
+    return now - age 
+}
 
+console.log(calculateYearOfBirth(360))
 /*
     Assignment 5
     Task:
@@ -190,6 +226,7 @@ print(vehicle)
     Easy assignment to do excercise a little creativity
     
 */
+<<<<<<< HEAD
 
 /*
     Complete the assignments below.
@@ -418,6 +455,8 @@ console.log(calculateYearOfBirth(360))
     Easy assignment to do excercise a little creativity
     
 */
+=======
+>>>>>>> 55f0781... updated homework.js in week2 folder.
 function creativity(){
     printName()
     hobbie()
@@ -434,4 +473,8 @@ function homeState(){
     console.log('Texas')
 }
 
+<<<<<<< HEAD
 creativity()
+=======
+creativity()
+>>>>>>> 55f0781... updated homework.js in week2 folder.
