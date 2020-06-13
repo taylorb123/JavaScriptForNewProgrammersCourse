@@ -473,8 +473,4 @@ function homeState(){
     console.log('Texas')
 }
 
-<<<<<<< HEAD
 creativity()
-=======
-creativity()
->>>>>>> 55f0781... updated homework.js in week2 folder.
